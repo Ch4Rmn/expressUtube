@@ -1,0 +1,79 @@
+localhost:3000/paper
+get('/:item')------------>req.params
+
+localhost:3000/mile=3
+get('/')--------------->req.query
+
+Authentication with PassportJs
+
+အကျဉ်းချုပ်ပြောရရင် Authentication ဆိုတာ
+ဝင်ခွင့်ရှိမရှိစစ်တာပါ။ Login ဝင်လိုက်ရင် Authenticate ဖြစ်သွားတယ်၊ ဝင်ခွင့်ရသွားတယ် ဆိုပါတော့။
+Authorization ဆိုတာကတော့ လုပ်ခွင့်ရှိမရှိစစ်တာပါ။ ဝင်ခွင့်ရှိရင်တောင် လုပ်ခွင့်က ရှိချင်မှ ရှိမှာပါ။
+Authenticate ဖြစ်နေပေမယ့် Authorize ဖြစ်ချင်မှ ဖြစ်တာပါ။ ဒီလိုရောတတ်တဲ့ကိစ္စကိုမှ ထပ်ပြီးမျက်စိ
+လည်စရာ ဖြစ်သွားနိုင်တာကော့ 401 Unauthorized မှာ အသုံးအနှုံး Unauthorized လို့ ပါနေပေ
+မယ့် တစ်ကယ်တမ်း Authenticate လိုတဲ့နေရာမှာ သုံးရတာပါတဲ့။ Authorize လိုတဲ့နေရာတွေအတွက်
+403 Forbidden ကို သုံးရပါတယ်။
+
+cookie-parser
+
+npm i cookie-parser
+
+    response.cookie("visited",true , {
+      maxAge:10000,       , မ ေမ့၇န်
+    })
+
+    log(req.cookies)
+
+
+express-session
+
+npm i express-session
+
+
+express.static(root, [options])
+
+mongoose 
+npm i mongoose
+
+const mongoose = require('mongoose');
+
+const uri = 'mongodb+srv://username:badpw@cluster0-OMITTED.mongodb.net/' +
+  'test?retryWrites=true&w=majority';
+
+// Prints "MongoServerError: bad auth Authentication failed."
+
+mongoose.connect(uri, {
+  serverSelectionTimeoutMS: 5000
+}).catch(err => console.log(err.reason));
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Authentication with passport 
+
+npm i passport passport-local
